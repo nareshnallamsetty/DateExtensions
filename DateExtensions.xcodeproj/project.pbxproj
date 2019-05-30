@@ -10,6 +10,7 @@
 		CBCFB424229FBEC600A349F2 /* DateExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCFB41A229FBEC600A349F2 /* DateExtensions.framework */; };
 		CBCFB429229FBEC600A349F2 /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFB428229FBEC600A349F2 /* DateExtensionsTests.swift */; };
 		CBCFB42B229FBEC600A349F2 /* DateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = CBCFB41D229FBEC600A349F2 /* DateExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBCFB435229FBF1300A349F2 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFB434229FBF1300A349F2 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		CBCFB423229FBEC600A349F2 /* DateExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCFB428229FBEC600A349F2 /* DateExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionsTests.swift; sourceTree = "<group>"; };
 		CBCFB42A229FBEC600A349F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBCFB434229FBF1300A349F2 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				CBCFB41D229FBEC600A349F2 /* DateExtensions.h */,
 				CBCFB41E229FBEC600A349F2 /* Info.plist */,
+				CBCFB434229FBF1300A349F2 /* DateExtension.swift */,
 			);
 			path = DateExtensions;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					CBCFB419229FBEC600A349F2 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					CBCFB422229FBEC600A349F2 = {
 						CreatedOnToolsVersion = 10.2;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCFB435229FBF1300A349F2 /* DateExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		CBCFB42F229FBEC600A349F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.IMIMobile.DateExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		CBCFB430229FBEC600A349F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		CBCFB432229FBEC600A349F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XB45D9TT4D;
 				INFOPLIST_FILE = DateExtensionsTests/Info.plist;
@@ -409,6 +418,7 @@
 		CBCFB433229FBEC600A349F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XB45D9TT4D;
 				INFOPLIST_FILE = DateExtensionsTests/Info.plist;
